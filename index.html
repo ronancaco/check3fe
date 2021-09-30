@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Minha cidade</title>
+</head>
+<body>
+    <header>
+        <h1>São Gonçalo do Sapucai e informações</h1>
+        <a href="#">Sobre a cidade</a>
+        <a href="#">Notícias</a>
+        <p>Se inscreva e receba mais informações de Turismo</p>
+    </header>
+   <main>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Dados pessoais:</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" maxlength="100"placeholder="Nome Completo" required>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="ex:email@yahoo.com">
+            <label for="tel">Telefone contato:</label>
+            <input type="telefone" name="telefone" id="telefone" placeholder="0000-0000">
+            <label for="DN">Data e ano de nascimento:</label>
+            <input type="datetime" name="data" id="data">
+            <input type="radio" name="idade" value="maiordeidade" id="maiordeidade">
+            <label for="maior idade">maior de 18 anos</label>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <input type="checkbox" name="turista" id="turista">
+                <label for="turista" name="turista" id="turista">Escolha</label>
+                <input type="checkbox" name="residente" id="residente">
+                <label for="checkbox" name="residente" id="residente">Residente</label>
+            </legend>
+            <fieldset>
+                <legend>
+                    <label for="turistico">Turismo</label>
+                    <select name="pontoturistico" id="pontoturistico">
+                        <option value="#">Escolha sua opção</option>
+                        <option value="igreja">Igreja do Rosário</option>
+                        <option value="festa">Festa do Rosário</option>
+                        <option value="usina">Usina do Chicão</option>
+                    </select>
+                </legend>
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="enviar">Enviar formulário</input>
+                <button type="reset">Limpar</button>
+            </fieldset>
+        </fieldset>
+    </form>
+   </main>
+  
+</body>
+</html>
